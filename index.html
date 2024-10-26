@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Teams Custom Tab</title>
+    <script src="https://statics.teams.cdn.office.net/sdk/v1.10.0/js/MicrosoftTeams.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        iframe {
+            width: 90%;
+            height: 80vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Microsoft Teams Web Viewer</h2>
+    <input type="text" id="urlInput" placeholder="Wpisz adres URL strony" style="width: 80%; padding: 8px;" />
+    <button onclick="loadUrl()">Załaduj stronę</button>
+    <iframe id="webFrame"></iframe>
+
+    <script>
+        function loadUrl() {
+            const url = document.getElementById('urlInput').value;
+            if (url) {
+                document.getElementById('webFrame').src = url;
+            }
+        }
+
+        // Inicjalizacja Teams SDK
+        microsoftTeams.initialize();
+        microsoftTeams.getContext((context) => {
+            console.log('Aplikacja uruchomiona w kontekście Teams:', context);
+        });
+    </script>
+</body>
+</html>

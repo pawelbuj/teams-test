@@ -1,0 +1,44 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "version": "1.0.0",
+    "id": "your-app-id-here",
+    "packageName": "com.example.webviewer",
+    "developer": {
+      "name": "Twoja Firma",
+      "websiteUrl": "https://twojastrona.com",
+      "privacyUrl": "https://twojastrona.com/privacy",
+      "termsOfUseUrl": "https://twojastrona.com/terms"
+    },
+    "name": {
+      "short": "WebViewer",
+      "full": "Microsoft Teams Web Viewer"
+    },
+    "description": {
+      "short": "Wyświetla dowolny adres URL w Microsoft Teams",
+      "full": "Aplikacja umożliwia użytkownikom wprowadzanie adresu URL, który zostanie wyświetlony jako zakładka w kanale Teams."
+    },
+    "icons": {
+      "color": "https://twojastrona.com/icon-color.png",
+      "outline": "https://twojastrona.com/icon-outline.png"
+    },
+    "accentColor": "#FFFFFF",
+    "configurableTabs": [
+      {
+        "configurationUrl": "https://twojastrona.com/configure",
+        "canUpdateConfiguration": true,
+        "scopes": [
+          "team",
+          "groupchat"
+        ]
+      }
+    ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": [
+      "twojastrona.com"
+    ]
+  }
+  
