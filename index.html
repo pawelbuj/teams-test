@@ -29,13 +29,18 @@
     <iframe id="webFrame"></iframe>
 
     <script>
-        window.onload = function() {
-            // Inicjalizacja Teams SDK
-            microsoftTeams.initialize();
+window.onload = function() {
+    microsoftTeams.initialize((err) => {
+        if (err) {
+            console.error("Błąd podczas inicjalizacji Microsoft Teams SDK:", err);
+        } else {
             microsoftTeams.getContext((context) => {
                 console.log('Aplikacja uruchomiona w kontekście Teams:', context);
             });
-        };
+        }
+    });
+};
+
 
         function loadUrl() {
             const url = document.getElementById('urlInput').value;
