@@ -3,9 +3,9 @@
     "manifestVersion": "1.13",
     "version": "1.0.0",
     "id": "b349b54d-ba24-44e6-87ea-224f10bb9142",
-    "packageName": "com.example.webviewer",
+    "packageName": "com.datapolis.webviewer",
     "developer": {
-      "name": "Twoja Firma",
+      "name": "Datapolis",
       "websiteUrl": "https://www.datapolis.com",
       "privacyUrl": "https://www.datapolis.com//polityka-prywatnosci",
       "termsOfUseUrl": "https://www.datapolis.com//polityka-prywatnosci"
