@@ -1,9 +1,12 @@
-// server.js
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+
+// Middleware CORS
+app.use(cors());
 
 // Serwuj pliki statyczne z katalogu głównego
 app.use(express.static(path.join(__dirname)));
