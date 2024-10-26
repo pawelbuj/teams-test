@@ -7,8 +7,8 @@
     "developer": {
       "name": "Datapolis",
       "websiteUrl": "https://www.datapolis.com",
-      "privacyUrl": "https://www.datapolis.com//polityka-prywatnosci",
-      "termsOfUseUrl": "https://www.datapolis.com//polityka-prywatnosci"
+      "privacyUrl": "https://www.datapolis.com/polityka-prywatnosci",
+      "termsOfUseUrl": "https://www.datapolis.com/polityka-prywatnosci"
     },
     "name": {
       "short": "WebViewer",
