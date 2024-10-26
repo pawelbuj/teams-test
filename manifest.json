@@ -2,13 +2,13 @@
     "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
     "manifestVersion": "1.13",
     "version": "1.0.0",
-    "id": "your-app-id-here",
+    "id": "b349b54d-ba24-44e6-87ea-224f10bb9142",
     "packageName": "com.example.webviewer",
     "developer": {
       "name": "Twoja Firma",
-      "websiteUrl": "https://twojastrona.com",
-      "privacyUrl": "https://twojastrona.com/privacy",
-      "termsOfUseUrl": "https://twojastrona.com/terms"
+      "websiteUrl": "https://www.datapolis.com",
+      "privacyUrl": "https://www.datapolis.com//polityka-prywatnosci",
+      "termsOfUseUrl": "https://www.datapolis.com//polityka-prywatnosci"
     },
     "name": {
       "short": "WebViewer",
@@ -19,8 +19,8 @@
       "full": "Aplikacja umożliwia użytkownikom wprowadzanie adresu URL, który zostanie wyświetlony jako zakładka w kanale Teams."
     },
     "icons": {
-      "color": "https://twojastrona.com/icon-color.png",
-      "outline": "https://twojastrona.com/icon-outline.png"
+      "color": "https://teams-test-b546ffc8cf59.herokuapp.com/icons/icon-color.png",
+      "outline": "https://teams-test-b546ffc8cf59.herokuapp.com/icons/icon-outline.png"
     },
     "accentColor": "#FFFFFF",
     "configurableTabs": [
