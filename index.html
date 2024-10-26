@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Teams Hello World</title>
-    <script src="https://statics.teams.cdn.office.net/sdk/v1.10.0/js/MicrosoftTeams.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,18 +18,5 @@
 </head>
 <body>
     <h1>Hello World</h1>
-
-    <script>
-        window.onload = function() {
-            // Inicjalizacja Teams SDK
-            microsoftTeams.initialize((err) => {
-                if (err) {
-                    console.error("Błąd podczas inicjalizacji Microsoft Teams SDK:", err);
-                } else {
-                    console.log('Aplikacja uruchomiona w kontekście Teams');
-                }
-            });
-        };
-    </script>
 </body>
 </html>
