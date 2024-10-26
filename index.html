@@ -29,18 +29,20 @@
     <iframe id="webFrame"></iframe>
 
     <script>
+        window.onload = function() {
+            // Inicjalizacja Teams SDK
+            microsoftTeams.initialize();
+            microsoftTeams.getContext((context) => {
+                console.log('Aplikacja uruchomiona w kontekście Teams:', context);
+            });
+        };
+
         function loadUrl() {
             const url = document.getElementById('urlInput').value;
             if (url) {
                 document.getElementById('webFrame').src = url;
             }
         }
-
-        // Inicjalizacja Teams SDK
-        microsoftTeams.initialize();
-        microsoftTeams.getContext((context) => {
-            console.log('Aplikacja uruchomiona w kontekście Teams:', context);
-        });
     </script>
 </body>
 </html>
