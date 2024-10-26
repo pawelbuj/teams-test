@@ -6,7 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware CORS
-app.use(cors());
+app.use(cors({
+  origin: '*', // Możesz ograniczyć do adresów URL Teams, jeśli chcesz większe bezpieczeństwo
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // Serwuj pliki statyczne z katalogu głównego
 app.use(express.static(path.join(__dirname)));
