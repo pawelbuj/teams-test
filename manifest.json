@@ -25,7 +25,7 @@
     "accentColor": "#FFFFFF",
     "configurableTabs": [
       {
-        "configurationUrl": "https://twojastrona.com/configure",
+        "configurationUrl": "https://teams-test-b546ffc8cf59.herokuapp.com",
         "canUpdateConfiguration": true,
         "scopes": [
           "team",
@@ -38,7 +38,7 @@
       "messageTeamMembers"
     ],
     "validDomains": [
-      "twojastrona.com"
+      "teams-test-b546ffc8cf59.herokuapp.com"
     ]
   }
   
