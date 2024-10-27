@@ -1,44 +1,40 @@
 {
-    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
-    "manifestVersion": "1.13",
-    "version": "1.0.0",
-    "id": "b349b54d-ba24-44e6-87ea-224f10bb9142",
-    "packageName": "com.datapolis.webviewer",
-    "developer": {
-      "name": "Datapolis",
-      "websiteUrl": "https://www.datapolis.com",
-      "privacyUrl": "https://www.datapolis.com/polityka-prywatnosci",
-      "termsOfUseUrl": "https://www.datapolis.com/polityka-prywatnosci"
-    },
-    "name": {
-      "short": "WebViewer",
-      "full": "Microsoft Teams Web Viewer"
-    },
-    "description": {
-      "short": "Wyświetla dowolny adres URL w Microsoft Teams",
-      "full": "Aplikacja umożliwia użytkownikom wprowadzanie adresu URL, który zostanie wyświetlony jako zakładka w kanale Teams."
-    },
-    "icons": {
-      "color": "https://teams-test-b546ffc8cf59.herokuapp.com/icons/icon-color.png",
-      "outline": "https://teams-test-b546ffc8cf59.herokuapp.com/icons/icon-outline.png"
-    },
-    "accentColor": "#FFFFFF",
-    "configurableTabs": [
-      {
-        "configurationUrl": "https://teams-test-b546ffc8cf59.herokuapp.com",
-        "canUpdateConfiguration": true,
-        "scopes": [
-          "team",
-          "groupchat"
-        ]
-      }
-    ],
-    "permissions": [
-      "identity",
-      "messageTeamMembers"
-    ],
-    "validDomains": [
-      "teams-test-b546ffc8cf59.herokuapp.com"
-    ]
-  }
-  
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "version": "1.0.0",
+  "id": "b349b54d-ba24-44e6-87ea-224f10bb9142",
+  "packageName": "com.datapolis.webviewer",
+  "developer": {
+    "name": "Datapolis",
+    "websiteUrl": "https://www.datapolis.com",
+    "privacyUrl": "https://www.datapolis.com/polityka-prywatnosci",
+    "termsOfUseUrl": "https://www.datapolis.com/polityka-prywatnosci"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "WebViewer",
+    "full": "Microsoft Teams Web Viewer"
+  },
+  "description": {
+    "short": "Wyświetla URL w Teams",
+    "full": "Aplikacja umożliwia wyświetlanie URL w Teams"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://teams-test-b546ffc8cf59.herokuapp.com",
+      "canUpdateConfiguration": true,
+      "scopes": ["team", "groupchat"]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "teams-test-b546ffc8cf59.herokuapp.com"
+  ]
+}
