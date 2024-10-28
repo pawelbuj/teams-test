@@ -19,8 +19,8 @@
     "full": "Aplikacja umożliwia użytkownikom wprowadzanie adresu URL, który zostanie wyświetlony jako zakładka w kanale Teams."
   },
   "icons": {
-    "color": "https://raw.githubusercontent.com/pawelbuj/teams-test/refs/heads/main/icons/icon-color.png",      // Tu wstaw działający URL do ikony
-    "outline": "https://raw.githubusercontent.com/pawelbuj/teams-test/refs/heads/main/icons/icon-outline.png"   // Tu wstaw działający URL do ikony
+    "color": "https://raw.githubusercontent.com/pawelbuj/teams-test/refs/heads/main/icons/icon-color.png",     
+    "outline": "https://raw.githubusercontent.com/pawelbuj/teams-test/refs/heads/main/icons/icon-outline.png" 
   },
   "accentColor": "#FFFFFF",
   "configurableTabs": [
