@@ -10,24 +10,27 @@
     "privacyUrl": "https://www.datapolis.com/polityka-prywatnosci",
     "termsOfUseUrl": "https://www.datapolis.com/polityka-prywatnosci"
   },
-  "icons": {
-    "color": "icon-color.png",
-    "outline": "icon-outline.png"
-  },
   "name": {
     "short": "WebViewer",
     "full": "Microsoft Teams Web Viewer"
   },
   "description": {
-    "short": "Wyświetla URL w Teams",
-    "full": "Aplikacja umożliwia wyświetlanie URL w Teams"
+    "short": "Wyświetla dowolny adres URL w Microsoft Teams",
+    "full": "Aplikacja umożliwia użytkownikom wprowadzanie adresu URL, który zostanie wyświetlony jako zakładka w kanale Teams."
+  },
+  "icons": {
+    "color": "https://raw.githubusercontent.com/pawelbuj/teams-test/refs/heads/main/icons/icon-color.png",      // Tu wstaw działający URL do ikony
+    "outline": "https://raw.githubusercontent.com/pawelbuj/teams-test/refs/heads/main/icons/icon-outline.png"   // Tu wstaw działający URL do ikony
   },
   "accentColor": "#FFFFFF",
   "configurableTabs": [
     {
       "configurationUrl": "https://teams-test-b546ffc8cf59.herokuapp.com",
       "canUpdateConfiguration": true,
-      "scopes": ["team", "groupchat"]
+      "scopes": [
+        "team",
+        "groupchat"
+      ]
     }
   ],
   "permissions": [
@@ -35,6 +38,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "teams-test-b546ffc8cf59.herokuapp.com"
+    "teams-test-b546ffc8cf59.herokuapp.com",
+    "example.com"  // Dodaj domenę, z której hostujesz ikony
   ]
 }
